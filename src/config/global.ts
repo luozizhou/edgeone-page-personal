@@ -1,38 +1,47 @@
 export const globalConfig = {
   site: {
-    name: "Your Portfolio Name",
-    author: "Your Name",
+    name: "Johnson's Space",
+    author: "Johnson's Space",
     description: "A brief description of your portfolio website",
-    url: "/"
+    url: "www.luozizhou.com"
   },
   navigation: {
     aria: "Main Navigation",
     items: [
       {
         title: "Home",
+        titleZh: "首页",
         href: "/"
       },
       {
+        title: "Presentation",
+        titleZh: "演示",
+        href: "/presentation"
+      },
+      {
         title: "Projects",
+        titleZh: "项目",
         href: "/projects"
       },
       {
         title: "Posts",
+        titleZh: "文章",
         href: "/posts"
       },
       {
         title: "About",
+        titleZh: "关于",
         href: "/about"
       }
     ]
   },
   footer: {
     aria: "Footer Navigation",
-    copyright: "© 2025 Your Name. All rights reserved.",
+    copyright: "© 2026 Johnson's Space. All rights reserved.",
+    copyrightZh: "© 2026 Johnson 的空间。保留所有权利。",
     social: {
-      twitter: "https://x.com/TencentCloudEO",
-      github: "https://github.com/TencentEdgeOne",
-      email: "media_service@tencent.com"
+      github: "https://github.com/luozizhou",
+      email: "johnson_chn@sina.com"
     }
   }
 } as const; 

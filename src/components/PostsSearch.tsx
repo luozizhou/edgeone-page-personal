@@ -57,7 +57,7 @@ export default function PostsSearch() {
               href={`/${post.slug}`}
               pattern="dots"
               imageUrl={post.image}
-              readingTime={parseInt(post.readTime)}
+              readingTime={parseInt(post.readTime || "5")}
             />
           ))
         ) : (

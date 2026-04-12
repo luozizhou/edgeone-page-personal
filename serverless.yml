@@ -1,0 +1,14 @@
+component: website
+name: johnson-personal-website
+inputs:
+  src:
+    src: ./out
+    index: index.html
+    error: 404.html
+  region: ap-guangzhou
+  bucketName: johnson-personal-website
+  protocol: https
+  cors:
+    - allowOrigin: '*'
+      allowMethods: GET,POST,PUT,DELETE
+      allowHeaders: '*'

@@ -3,16 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 33, 37, 41;
   --background-rgb: 255, 255, 255;
+  --accent: 1, 47, 108;
+  --accent-light: 30, 70, 130;
+  --border: 200, 200, 200;
 }
 
 .dark {
-  --foreground-rgb: 255, 255, 255;
-  --background-rgb: 23, 23, 23;
+  --foreground-rgb: 210, 215, 220;
+  --background-rgb: 24, 25, 28;
+  --accent: 100, 149, 199;
+  --accent-light: 130, 170, 210;
+  --border: 60, 60, 65;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-} 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Academic typography */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.01em;
+}
+
+/* Subtle link underline animation */
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+/* Prose overrides for academic style */
+.prose {
+  --tw-prose-body: rgb(var(--foreground-rgb));
+  --tw-prose-headings: rgb(var(--foreground-rgb));
+  --tw-prose-links: rgb(var(--accent));
+  --tw-prose-bold: rgb(var(--foreground-rgb));
+  --tw-prose-counters: rgb(var(--accent));
+  --tw-prose-bullets: rgb(var(--accent));
+  max-width: 42rem;
+}
+
+.prose a {
+  text-decoration-color: rgb(var(--accent-light));
+}
+
+.prose blockquote {
+  border-left-color: rgb(var(--accent));
+  font-style: italic;
+}
+
+/* Selection highlight */
+::selection {
+  background: rgb(var(--accent));
+  color: white;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

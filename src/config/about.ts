@@ -1,7 +1,7 @@
 export const aboutConfig = {
   title: "About Me",
-  description: "This is where you can introduce yourself or your company. Share your story, mission, and values. Explain what makes you unique and why people should be interested in your work. Keep it concise but engaging.",
-  image: "/assets/images/about.jpg",
+  description: "Hello, I'm Johnson, a household finance expert dedicated to exploring and sharing practical insights in personal and family financial management. Currently, I serve as a Customer Manager and Management Trainee at a local bank, where I focus on delivering tailored financial services to clients and deepening my expertise in household finance operations and customer-centric financial solutions.",
+  image: "/assets/images/johnson_personal_fat_cartoon.jpg",
   stats: [
     {
       value: "5+",
@@ -17,49 +17,43 @@ export const aboutConfig = {
     },
   ],
   skills: [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Node.js",
-    "Docker",
-    "Git",
-    "AWS"
+    "Stata",
+    "Python"
   ],
   experience: {
     title: "Experience",
     items: [
       {
-        period: "2022 - Present",
-        role: "Senior Frontend Developer",
-        company: "Tencent Cloud",
-        description: "Leading frontend development for EdgeOne platform and templates."
+        period: "2025 - Present",
+        role: "Management Trainee",
+        company: "Hankou Bank",
+        description: "Department: Retail Banking. Focusing on household finance operations and customer-centric financial solutions."
       },
       {
-        period: "2020 - 2022",
-        role: "Frontend Developer",
-        company: "Tencent Cloud",
-        description: "Developed and maintained multiple web applications and tools."
+        period: "2019 - 2024",
+        role: "Teaching Assistant (TA)",
+        company: "University of Sheffield",
+        description: "Courses: maths, statistics, economics, econometrics, Stata, research methods, etc."
       },
       {
-        period: "2018 - 2020",
-        role: "Junior Developer",
-        company: "Tencent Cloud",
-        description: "Worked on various client projects and internal tools."
+        period: "2017 - 2018",
+        role: "Marketing Assistant",
+        company: "University of Bath",
+        description: "Helped filming professional promotional videos and answered questions from students who were considering applying to the university."
       }
     ]
   },
   connect: {
     title: "Let's Connect",
-    description: "Feel free to reach out if you want to collaborate or just say hi! You can find us on social media or drop us an email.",
+    description: "Feel free to reach out if you want to collaborate or just say hi! You can find me on social media or drop me an email.",
     links: {
       twitter: {
-        text: "follow us on twitter",
-        url: "https://x.com/TencentCloudEO"
+        text: "follow me on twitter",
+        url: "https://x.com/zizhouluo"
       },
       email: {
         text: "email",
-        url: "mailto:media_service@tencent.com"
+        url: "mailto:johnson_chn@sina.com"
       }
     }
   }
