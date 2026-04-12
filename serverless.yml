@@ -12,3 +12,4 @@ inputs:
     - allowOrigin: '*'
       allowMethods: GET,POST,PUT,DELETE
       allowHeaders: '*'
+  runtime: Nodejs20.x
