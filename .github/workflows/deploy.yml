@@ -1,4 +1,4 @@
-name: Deploy to Tencent COS
+name: Deploy to Tencent SLS
 
 on:
   push:
@@ -25,13 +25,12 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      - name: Configure Tencent Cloud CLI
-        run: |
-          pip install tccli
-          tccli configure set --secret-id ${{ secrets.TENCENT_SECRET_ID }} --secret-key ${{ secrets.TENCENT_SECRET_KEY }} --region ap-guangzhou
+      - name: Install Serverless Framework
+        run: npm install -g serverless
 
-      - name: Upload to COS
-        run: |
-          # TODO: 替换为你的实际 COS Bucket 名称 (格式: xxx-123456789)
-          BUCKET_NAME=${{ secrets.COS_BUCKET_NAME }}
-          tccli cos upload --bucket ${BUCKET_NAME} --key "" --local-path ./out --region ap-guangzhou --recursive
+      - name: Deploy to Tencent SLS
+        run: npx serverless deploy
+        env:
+          SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
+          SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
